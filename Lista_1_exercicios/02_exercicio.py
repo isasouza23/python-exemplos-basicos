@@ -1,4 +1,4 @@
-# Valores
+# Var
 comprimento = 10
 largura = 30
 

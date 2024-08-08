@@ -1,4 +1,4 @@
-# Variavel
+# variavel
 mensagem = "Ontem eu estava estudando Python"
 
 # Uso do metodo split

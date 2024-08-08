@@ -1,11 +1,11 @@
-# Palavra escolhida
+# Var
 palavra = "praia"
 
-# Frase 
+# Frase Original 
 print(f"Quero ir para {palavra}")
 
 # Substituta
 nova_palavra = palavra.replace("praia", "sítio")
 
-# Frase nova
+# Nova Frase
 print(f"Quero ir para {nova_palavra}")
