@@ -1,21 +1,12 @@
-def verificar_credenciais(nome_usuario, senha):
-    usuario_correto = "admin"
-    senha_correta = "1234"
-    
-    if nome_usuario == usuario_correto and senha == senha_correta:
-        return True
-    else:
-        return False
+# 
+print("==-LOGIN-==")
 
-def main():
-    nome_usuario = input("Digite o nome de usuário: ")
-    senha = input("Digite a senha: ")
+# Input
+nome = input("Insira o nome de usuário: ")
+senha = input("Insira a senha: ")
 
-    # Verifica as credenciais
-    if verificar_credenciais(nome_usuario, senha):
-        print("Sucesso!")
-    else:
-        print("Erro.")
-
-if __name__ == "__main__":
-    main()
+# verificação do login e senha
+if nome == 'admin' and senha == '1234':
+    print("Sucesso!")
+else:
+    print("Erro.")
