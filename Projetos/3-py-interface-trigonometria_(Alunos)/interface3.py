@@ -18,11 +18,18 @@ def calcular():
 
         seno = math.sin(radiano)
         cosseno = math.cos(radiano)
-        tangente = math.tan(radiano)
-
         resultado_seno.config(text=f"{seno:.3f}")
         resultado_cosseno.config(text=f"{cosseno:.3f}")
+
+        # Verifica se tangente = 90º
+        if angulo == 90:
+            resultado_tangente.config(text="Indefinido")
+        else:
+            tangente = math.tan(radiano)
+
+        # Exibe resultado da tangente
         resultado_tangente.config(text=f"{tangente:.3f}")
+        
     except ValueError:
         resultado_seno.config(text="Erro")
         resultado_cosseno.config(text="Erro")
@@ -48,7 +55,7 @@ janela.geometry("400x550")
 janela.configure(bg="#f0f0f0")
 
 try:
-    icone_path = "C:/Users/DEV_2ano_2024/Documents/GitHub/python-exemplos-basicos/Projetos/Calculadora_trigonometria/seno.png"
+    icone_path = "C:/Users/DEV_2ano_2024/Documents/GitHub/python-exemplos-basicos/Projetos/3-py-interface-trigonometria_(Alunos)/seno.png"
     icone = Image.open(icone_path)
     icone = ImageTk.PhotoImage(icone)
     janela.iconphoto(True, icone)
@@ -56,7 +63,7 @@ except FileNotFoundError:
     print("Imagem 'seno.png' não encontrada para o ícone")
 
 try:
-    imagem_path = "C:/Users/DEV_2ano_2024/Documents/GitHub/python-exemplos-basicos/Projetos/Calculadora_trigonometria/seno2.png"
+    imagem_path = "C:/Users/DEV_2ano_2024/Documents/GitHub/python-exemplos-basicos/Projetos/3-py-interface-trigonometria_(Alunos)/seno2.png"
     imagem = Image.open(imagem_path)
     imagem = imagem.resize((380, 200), Image.LANCZOS)
     foto = ImageTk.PhotoImage(imagem)
