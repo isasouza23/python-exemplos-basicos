@@ -98,6 +98,7 @@ def main(page: ft.Page):
                     ft.Text("PREFERÊNCIAS"),
                     seletores,
                     gerar_button,
+                    ft.Text("Desenvolvido por Isabelle Souza", size=12),
                 ], 
                 alignment=ft.MainAxisAlignment.START,
                 horizontal_alignment=ft.CrossAxisAlignment.CENTER,
